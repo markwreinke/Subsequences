@@ -12,6 +12,7 @@ class Main {
   }
 
 
+  /* This method finds all subsequences in a given word from a given string of words */
   public static LinkedList<String> findSubsequence(String givenWord, String words[]){
     LinkedList<String> subSeqList = new LinkedList<String>();
     for(String word : words){
@@ -38,6 +39,7 @@ class Main {
     return subSeqList;
   }
 
+  /* Finds the longest subsequence by calling findSubsequence and returning the longest result */
   public static String longestSubsequence(String givenWord, String words[]){
     LinkedList<String> subSeqList = findSubsequence(givenWord, words);
     String longestSeq = "";
@@ -50,6 +52,7 @@ class Main {
     return longestSeq;
   }
 
+  /* Finds the shortest subsequence by calling findSubsequence and returning the shortes result */
   public static String shortestSubsequence(String givenWord, String words[]){
     LinkedList<String> subSeqList = findSubsequence(givenWord, words);
     String shortestSeq = "";
